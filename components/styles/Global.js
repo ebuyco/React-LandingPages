@@ -1,5 +1,9 @@
 import React from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import fontDefault from '../../public/static/font/Roboto-Regular.ttf';
+import subFont from '../../public/static/font/Nunito-Regular.ttf';
+import subFont1 from '../../public/static/font/Nunito-Bold.ttf';
+import subFont2 from '../../public/static/font/Nunito-Light.ttf';
 
 const theme = {
   black: '#000000',
@@ -149,8 +153,31 @@ const StyledPage = styled.div`
 `;
 
 const GlobalStyles = createGlobalStyle`
+      @font-face {
+          font-family: 'NunitoRegular';
+          src: url(${subFont}) format('truetype');
+          font-weight:normal;
+          font-style: normal;
+      }
+      @font-face {
+          font-family: 'NunitoBold';
+          src: url(${subFont1}) format('truetype');
+          font-weight:normal;
+          font-style: normal;
+      }
+      @font-face {
+          font-family: 'Nunitolight';
+          src: url(${subFont2}) format('truetype');
+          font-weight:normal;
+          font-style: normal;
+      }
 
-
+      @font-face {
+        font-family: 'Roboto-regular';
+        src: url(${fontDefault});
+        font-weight: normal;
+        font-style: normal;
+      }
 
             *,
           *::before,
@@ -182,17 +209,15 @@ const GlobalStyles = createGlobalStyle`
             margin: 0;
           }
 
-
           body {
             min-height: 100vh;
             scroll-behavior: smooth;
             text-rendering: optimizeSpeed;
             line-height: 1.5;
-            font-family: 'Roboto-Regular';
+            font-family: 'Roboto-regular';
             background-color: ${theme.base};
             background-size: cover;
           }
-
 
           ul[class],
           ol[class] {
@@ -235,7 +260,7 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: ${theme.black};
       }
-      button {   font-family: 'Roboto-Regular'; }
+      button {   font-family: 'NunitoRegular'; }
 `;
 
 const Page = ({ children }) => (

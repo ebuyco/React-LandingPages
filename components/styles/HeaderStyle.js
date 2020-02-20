@@ -2,17 +2,21 @@ import styled from 'styled-components';
 
 const Header = styled.header`
   width: ${props => props.theme.maxWidth};
-
+  background-color: ${props => props.theme.colors.gray.g100};
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   .header__main__wrapper {
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
-    height: 70px;
     text-align: center;
+    height: 100px;
+    padding-top: 2rem;
+    font-family: 'Roboto-regular';
   }
 
   .img__logo__header {
     width: 100%;
-    max-width: 10vh;
+    max-width: 5vh;
     height: auto;
     float: left;
   }
@@ -24,6 +28,7 @@ const Header = styled.header`
     vertical-align: top;
     justify-content: center;
     align-items: center;
+    font-family: 'Nunitolight';
   }
   .li__nav__wrapper {
     list-style-type: none;
@@ -35,8 +40,16 @@ const Header = styled.header`
   .nav__link__wrapper {
     color: ${props => props.theme.black};
   }
-  .gift__btn_header__finder {
+  .button__wrapper__header {
     float: right;
+    font-family: 'Nunitolight';
+  }
+  .gift__btn_header__finder {
+    color: ${props => props.theme.colors.orange.o400};
+    border: 1px solid ${props => props.theme.colors.orange.o400};
+    padding: 0.55555rem 0.999999rem 0.55555rem 0.999999999rem;
+    border-radius: 0.555555555555rem;
+    cursor: pointer;
   }
 `;
 

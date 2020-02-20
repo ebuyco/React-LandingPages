@@ -1,12 +1,17 @@
 import React from 'react';
 import HeaderStyle from '../styles/HeaderStyle';
-import LogoHeader from '../../public/img/Logo1.png';
+import LogoHeader from '../../public/static/img/Logo1.png';
 
 const Header = () => (
   <>
     <HeaderStyle>
       <div className="header__main__wrapper">
         <img src={LogoHeader} className="img__logo__header" alt="class__logo" />
+        <div className="button__wrapper__header">
+          <a className="gift__btn_header__finder" type="button">
+            Gift Finder
+          </a>
+        </div>
         <ul className="ul__nav__wrapper">
           <li className="li__nav__wrapper">
             <a href="/" className="nav__link__wrapper">
@@ -29,9 +34,6 @@ const Header = () => (
             </a>
           </li>
         </ul>
-        <button className="gift__btn_header__finder" type="button">
-          Gift Finder
-        </button>
       </div>
     </HeaderStyle>
   </>
