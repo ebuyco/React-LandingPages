@@ -1,13 +1,15 @@
 node_modules/
 /node_modules
 .DS_Store
+.cahe
 /.cache
 ./.cache
+dist
 /dist
 ./dist
+build
 /build
 ./build
-dist
 *.log
 haters/
 .next/
