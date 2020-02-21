@@ -1,13 +1,39 @@
+// import React, { useState, useEffect } from 'react';
 import React, { useEffect, useRef, useState } from 'react';
 import HeaderStyle from '../styles/HeaderStyle';
 import LogoHeader from '../../public/static/img/Logo1.png';
+// import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 
 const Header = () => {
-  const [isSticky, setSticky] = useState(false);
+  // const [shouldHideHeader, setShouldHideHeader] = useState(false);
+  // const [shouldShowShadow, setShouldShowShadow] = useState(false);
 
+  // const MINIMUM_SCROLL = 80;
+  // const TIMEOUT_DELAY = 400;
+
+  // useDocumentScrollThrottled(callbackData => {
+  //   const { previousScrollTop, currentScrollTop } = callbackData;
+  //   const isScrolledDown = previousScrollTop < currentScrollTop;
+  //   const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
+
+  //   setShouldShowShadow(currentScrollTop > 2);
+
+  //   setTimeout(() => {
+  //     setShouldHideHeader(isScrolledDown && isMinimumScrolled);
+  //   }, TIMEOUT_DELAY);
+  // });
+
+  // const shadowStyle = shouldShowShadow ? 'shadow' : '';
+  // const hiddenStyle = shouldHideHeader ? 'hidden' : '';
+  const [isSticky, setSticky] = useState(false);
+  // const [scroll, setScroll] = useState(1);
   const ref = useRef(null);
   const handleScroll = () => {
+    // const scrollCheck = window.scrollY < 10;
     setSticky(ref.current.getBoundingClientRect().top);
+    // if (scrollCheck !== scroll) {
+    //   setScroll(scrollCheck);
+    // }
   };
 
   useEffect(() => {
@@ -25,6 +51,7 @@ const Header = () => {
           className={`header__main__wrapper${isSticky ? ' sticky' : ''}`}
           ref={ref}
         >
+          {/* <div className={`header__main__wrapper ${shadowStyle} ${hiddenStyle}`}> */}
           <img
             src={LogoHeader}
             className="img__logo__header"
