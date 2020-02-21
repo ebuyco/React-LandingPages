@@ -22,7 +22,9 @@ const Header = () => {
     <>
       <HeaderStyle>
         <div
-          className={`header__main__wrapper${isSticky ? ' sticky' : ''}`}
+          className={`header__main__wrapper${
+            isSticky ? ' sticky' : ' sticky--inner'
+          }`}
           ref={ref}
         >
           <img
