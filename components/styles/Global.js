@@ -143,6 +143,7 @@ const theme = {
 };
 
 const Inner = styled.div`
+  width: 100%;
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
 `;
@@ -216,7 +217,7 @@ const GlobalStyles = createGlobalStyle`
             line-height: 1.5;
             font-family: 'Roboto-regular';
             background-color: ${theme.base};
-            background-size: cover;
+
           }
 
           ul[class],
