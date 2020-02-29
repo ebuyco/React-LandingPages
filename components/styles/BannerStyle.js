@@ -40,18 +40,18 @@ const GiftBanner = styled.section`
   }
   .title__caption {
     font-family: 'NunitoBold';
-    font-size: 5vw;
-    margin-bottom: 4rem;
+    font-size: 4vw;
+    margin-bottom: 2rem;
   }
   .banner__caption__inner {
     width: 100%;
-    max-width: 80%;
+    max-width: 60%;
     text-align: left;
   }
   .title__sub_title {
     font-family: 'NunitoRegular';
-    font-size: 2vw;
-    margin-bottom: 4rem;
+    font-size: 1.6vw;
+    margin-bottom: 2rem;
   }
   .button__caption {
     color: #fff;
