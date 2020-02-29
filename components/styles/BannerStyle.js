@@ -60,6 +60,31 @@ const GiftBanner = styled.section`
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 0.3rem;
   }
+  .title__caption__2nd {
+    font-family: 'Nunitolight';
+    font-size: 2vw;
+    margin-bottom: 2rem;
+  }
+  .title__sub_title__2nd {
+    font-family: 'Nunitolight';
+    font-size: 1.7vw;
+    margin-bottom: 2rem;
+  }
+  .button__caption__2nd {
+    color: ${props => props.theme.colors.orange.o1000};
+    background-color: transparent;
+    border: 2px solid ${props => props.theme.colors.orange.o1000};
+    float: left;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 0.3rem;
+    font-family: 'Nunitolight';
+    text-transform: uppercase;
+  }
+  .banner__caption__inner__2nd {
+    width: 100%;
+    max-width: 70%;
+    text-align: left;
+  }
 `;
 
 export default GiftBanner;
