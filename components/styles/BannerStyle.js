@@ -24,6 +24,7 @@ const GiftBanner = styled.section`
     flex: 3;
     margin: 0 auto;
     flex-wrap: wrap;
+    background-color: #f0f1f3;
   }
   .banner__image {
     display: flex;
@@ -36,6 +37,28 @@ const GiftBanner = styled.section`
     width: 100%;
     max-width: 100%;
     height: auto;
+  }
+  .title__caption {
+    font-family: 'NunitoBold';
+    font-size: 5vw;
+    margin-bottom: 4rem;
+  }
+  .banner__caption__inner {
+    width: 100%;
+    max-width: 80%;
+    text-align: left;
+  }
+  .title__sub_title {
+    font-family: 'NunitoRegular';
+    font-size: 2vw;
+    margin-bottom: 4rem;
+  }
+  .button__caption {
+    color: #fff;
+    background-color: ${props => props.theme.colors.orange.o1000};
+    float: left;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.3rem;
   }
 `;
 
