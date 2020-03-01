@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const GiftBanner = styled.section`
   width: 100%;
   margin: 0 auto;
-
+  background-color: #f0f1f3;
   .gift__banner__wrapper {
     width: 100%;
     justify-content: center;
@@ -15,6 +15,10 @@ const GiftBanner = styled.section`
     /* display: grid;
     grid-gap: 90px;
     grid-template-columns: 1fr 1fr; */
+    @media (max-width: 1024px) {
+      flex-flow: row wrap;
+      align-items: center;
+    }
   }
   .banner__caption {
     display: flex;
@@ -25,6 +29,29 @@ const GiftBanner = styled.section`
     margin: 0 auto;
     flex-wrap: wrap;
     background-color: #f0f1f3;
+    @media (max-width: 1024px) {
+      height: auto;
+      flex-basis: 30%;
+      flex: auto;
+      width: 100%;
+      box-sizing: border-box;
+      max-width: 50%;
+    }
+    @media (max-width: 800px) {
+      flex-basis: 50%;
+      width: 100%;
+      max-width: 50%;
+      order: 1;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      max-width: 60%;
+      flex-basis: 60%;
+    }
+    @media (max-width: 480px) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
   }
   .banner__image {
     display: flex;
@@ -32,6 +59,29 @@ const GiftBanner = styled.section`
     flex-direction: column;
     flex: 3;
     flex-wrap: wrap;
+    @media (max-width: 1024px) {
+      height: auto;
+      flex-basis: 30%;
+      flex: auto;
+      width: 100%;
+      box-sizing: border-box;
+      max-width: 50%;
+    }
+    @media (max-width: 800px) {
+      flex-basis: 50%;
+      width: 100%;
+      max-width: 50%;
+    }
+    @media (max-width: 600px) {
+      order: 2;
+      width: 100%;
+      max-width: 40%;
+      flex-basis: 40%;
+    }
+    @media (max-width: 480px) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
   }
   .image__banner__inner {
     width: 100%;
@@ -47,6 +97,13 @@ const GiftBanner = styled.section`
     width: 100%;
     max-width: 60%;
     text-align: left;
+    @media (max-width: 800px) {
+      max-width: 70%;
+      text-align: left;
+    }
+    @media (max-width: 480px) {
+      padding: 2rem;
+    }
   }
   .title__sub_title {
     font-family: 'NunitoRegular';
@@ -57,8 +114,11 @@ const GiftBanner = styled.section`
     color: #fff;
     background-color: ${props => props.theme.colors.orange.o1000};
     float: left;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1vw 2vw 1vw 2vw;
     border-radius: 0.3rem;
+    @media (max-width: 800px) {
+      font-size: 1.5vw;
+    }
   }
   .title__caption__2nd {
     font-family: 'Nunitolight';
@@ -75,15 +135,21 @@ const GiftBanner = styled.section`
     background-color: transparent;
     border: 2px solid ${props => props.theme.colors.orange.o1000};
     float: left;
-    padding: 0.8rem 2rem 0.8rem 2rem;
+    padding: 0.8vw 2vw 0.8vw 2vw;
     border-radius: 0.3rem;
     font-family: 'Nunitolight';
     text-transform: uppercase;
+    @media (max-width: 800px) {
+      font-size: 1.5vw;
+    }
   }
   .banner__caption__inner__2nd {
     width: 100%;
     max-width: 70%;
     text-align: left;
+    @media (max-width: 480px) {
+      padding: 2rem;
+    }
   }
 `;
 

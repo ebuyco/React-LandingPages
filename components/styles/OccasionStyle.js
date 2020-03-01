@@ -71,6 +71,13 @@ const OccasionStyle = styled.section`
     max-width: 2%;
     margin-left: 0.5555rem;
   }
+  .occupation__title__header {
+    font-family: 'Roboto-regular';
+    margin-bottom: 1rem;
+  }
+  .occupation__sub__title {
+    font-family: 'Nunitolight';
+  }
   .occupation__header__wrapper {
     margin-top: 4rem;
     margin-bottom: 4rem;
