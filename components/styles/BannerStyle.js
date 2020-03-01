@@ -59,7 +59,7 @@ const GiftBanner = styled.section`
     flex-direction: column;
     flex: 3;
     flex-wrap: wrap;
-    @media (max-width: 1024px) {
+    @media (max-width: ${props => props.theme.large}) {
       height: auto;
       flex-basis: 30%;
       flex: auto;
@@ -67,18 +67,18 @@ const GiftBanner = styled.section`
       box-sizing: border-box;
       max-width: 50%;
     }
-    @media (max-width: 800px) {
+    @media (max-width: ${props => props.theme.medium}) {
       flex-basis: 50%;
       width: 100%;
       max-width: 50%;
     }
-    @media (max-width: 600px) {
+    @media (max-width: ${props => props.theme.small}) {
       order: 2;
       width: 100%;
       max-width: 40%;
       flex-basis: 40%;
     }
-    @media (max-width: 480px) {
+    @media (max-width: ${props => props.theme.xtraSmall}) {
       max-width: 100%;
       flex-basis: 100%;
     }

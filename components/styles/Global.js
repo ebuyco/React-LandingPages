@@ -9,6 +9,10 @@ const theme = {
   black: '#000000',
   base: '#FFFFFF',
   maxWidth: '100%',
+  large: '1024px',
+  medium: '800px',
+  small: '600px',
+  xtraSmall: '480px',
   screens: {
     mobile: '640px',
     tablet: '768px',
