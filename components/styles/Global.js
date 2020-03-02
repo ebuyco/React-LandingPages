@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import fontDefault from '../../public/static/font/Roboto-Regular.ttf';
 import subFont from '../../public/static/font/Nunito-Regular.ttf';
+import subFont0 from '../../public/static/font/Nunito-SemiBold.ttf';
 import subFont1 from '../../public/static/font/Nunito-Bold.ttf';
 import subFont2 from '../../public/static/font/Nunito-Light.ttf';
 
@@ -45,6 +46,7 @@ const theme = {
       g800: '#2D3748',
       g900: '#1A202C',
       g1000: '#F9FAFB',
+      g1200: '#211F21',
     },
     red: {
       r100: '#FFF5F5',
@@ -163,6 +165,12 @@ const GlobalStyles = createGlobalStyle`
       @font-face {
           font-family: 'NunitoRegular';
           src: url(${subFont}) format('truetype');
+          font-weight:normal;
+          font-style: normal;
+      }
+      @font-face {
+          font-family: 'NunitoSemiBold';
+          src: url(${subFont0}) format('truetype');
           font-weight:normal;
           font-style: normal;
       }
