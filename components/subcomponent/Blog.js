@@ -21,11 +21,13 @@ const Blog = () => (
             />
           </div>
           <div className="image__caption__wrapper">
-            <p className="subtitle__caption__image">Mr. John Doe</p>
-            <h1 className="caption__subtitle__name">
-              The best way to wish your wife
-            </h1>
-            <p className="read__more__caption">Read More</p>
+            <div className="image__caption__wrapper__inner">
+              <p className="subtitle__caption__image">Mr. John Doe</p>
+              <h1 className="caption__subtitle__name">
+                The best way to wish your wife
+              </h1>
+              <p className="read__more__caption">Read More</p>
+            </div>
           </div>
         </div>
       </div>
