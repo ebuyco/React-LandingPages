@@ -6,6 +6,7 @@ import Banner from '../subcomponent/GiftBanner';
 import Occasion from '../subcomponent/Occasion';
 import PromoBanner from '../subcomponent/PromoBanner';
 import Blog from '../subcomponent/Blog';
+import Footer from '../subcomponent/Footer';
 
 const App = () => (
   <Theme>
@@ -15,6 +16,7 @@ const App = () => (
       <Occasion />
       <PromoBanner />
       <Blog />
+      <Footer />
     </HomepageStyle>
   </Theme>
 );

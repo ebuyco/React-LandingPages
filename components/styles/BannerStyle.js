@@ -118,6 +118,7 @@ const GiftBanner = styled.section`
     border-radius: 0.3rem;
     @media (max-width: 800px) {
       font-size: 1.5vw;
+      width: 100%;
     }
   }
   .title__caption__2nd {
@@ -141,6 +142,7 @@ const GiftBanner = styled.section`
     text-transform: uppercase;
     @media (max-width: 800px) {
       font-size: 1.5vw;
+      width: 100%;
     }
   }
   .banner__caption__inner__2nd {

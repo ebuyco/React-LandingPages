@@ -30,6 +30,36 @@ const Blog = () => (
             </div>
           </div>
         </div>
+        <div className="grid__box__wrapper">
+          <div className="wrapper__box__inner">
+            <div className="wrapper__box__inner__content">
+              <h3 className="header__caption">
+                Database to find the gifts for your girlfriend
+              </h3>
+              <p className="subtitle__data">
+                Lorem ipsum dolor sit amet, consecteur adispicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <a href="/" className="read__more__data__box">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div className="wrapper__box__inner">
+            <div className="wrapper__box__inner__content">
+              <h3 className="header__caption">
+                How Artificial Intelligence read your mind to find the best gift
+              </h3>
+              <p className="subtitle__data">
+                Lorem ipsum dolor sit amet, consecteur adispiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <a href="/" className="read__more__data__box">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </BlogStyle>
   </>

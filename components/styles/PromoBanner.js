@@ -66,7 +66,7 @@ const PromoBannerStyle = styled.section`
     border-radius: 0.3rem;
     border: 0 solid ${props => props.theme.colors.gray.g1200};
     text-transform: uppercase;
-    @media (max-width: ${props => props.theme.small}) {
+    @media (max-width: ${props => props.theme.large}) {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -81,12 +81,13 @@ const PromoBannerStyle = styled.section`
     border: 1px solid ${props => props.theme.colors.gray.g1200};
     text-transform: uppercase;
     margin-left: 1vw;
-    @media (max-width: ${props => props.theme.small}) {
+    @media (max-width: ${props => props.theme.large}) {
       width: 100%;
       margin-top: 2vw;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-left: 0;
     }
   }
 `;
